@@ -20,3 +20,6 @@ Validated with <a href='https://validator.w3.org/nu/'>Nu HTML Checker</a>.
   - You can use any of the named CSS colors.
 - Your site should use custom styles for any code such as HTML tags (like `<h1>`) or CSS properties or values (like font-family).
   - Represent code using a monospace font family and a different background color.
+
+## Preview
+![image](https://user-images.githubusercontent.com/14256313/213832097-09fdc75c-ab8e-4456-9b66-024fcb803b70.png)
