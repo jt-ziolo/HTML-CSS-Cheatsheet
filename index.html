@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Project content -->
+    <title>CSS Box Model, Display and Positioning Tags Cheatsheet</title>
+    <link rel="stylesheet" href="./resources/css/styles.css">
+    <!-- End project content -->
+  </head>
+
+  <body>
+
+    <!-- Project content -->
+    <h1>CSS Box Model, Display and Positioning Tags Cheatsheet</h1>
+
+    <p id="author">by JT Ziolo <a href="https://github.com/jt-ziolo"><img
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="25px" height="25px" />
+      </a>
+    </p>
+    <h2>Properties</h2>
+    <h3>General</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Full Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tag">opacity</td>
+          <td>Controls opacity. Takes a float value, from 0 (transparent) to 1 (opaque).</td>
+        </tr>
+        <tr>
+          <td class="tag">visibility</td>
+          <td>Controls whether an element is drawn without changing its influence on layout (with exceptions).</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Box Model</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Full Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tag">margin</td>
+          <td>Defines the spacing between this element and bordering elements, starting from the top going clockwise
+            (space separated).</td>
+        </tr>
+        <tr>
+          <td class="tag">padding</td>
+          <td>Defines the spacing between this element and its own border, starting from the top going clockwise (space
+            separated).</td>
+        </tr>
+        <tr>
+          <td class="tag">overflow</td>
+          <td>Controls behavior in both directions when an element's content is too big to fit in its block formatting
+            context.</td>
+        </tr>
+        <tr>
+          <td class="tag">overflow-x</td>
+          <td>Controls behavior in the x direction when an element's content is too big to fit in its block formatting
+            context.</td>
+        </tr>
+        <tr>
+          <td class="tag">overflow-y</td>
+          <td>Controls behavior in the y direction when an element's content is too big to fit in its block formatting
+            context.</td>
+        </tr>
+        <tr>
+          <td class="tag">width</td>
+          <td>Sets the width of the element, surrounded by the padding and margin areas.</td>
+        </tr>
+        <tr>
+          <td class="tag">height</td>
+          <td>Sets the height of the element, surrounded by the padding and margin areas.</td>
+        </tr>
+        <tr>
+          <td class="tag">min-width</td>
+          <td>Sets the lower limit of the used value of the width property.</td>
+        </tr>
+        <tr>
+          <td class="tag">min-height</td>
+          <td>Sets the lower limit of the used value of the height property.</td>
+        </tr>
+        <tr>
+          <td class="tag">max-width</td>
+          <td>Sets the upper limit of the used value of the width property.</td>
+        </tr>
+        <tr>
+          <td class="tag">max-height</td>
+          <td>Sets the upper limit of the used value of the height property.</td>
+        </tr>
+        <tr>
+          <td class="tag">box-sizing</td>
+          <td>Sets whether borders and padding are taken into account when sizing the element.</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Display and Positioning</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Full Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tag">z-index</td>
+          <td>Sets the z-order of the element and establishes a stacking context for its descendants. Overlapping
+            elements with a larger z-index cover those with a smaller one.</td>
+        </tr>
+        <tr>
+          <td class="tag">position</td>
+          <td>Sets how an element is positioned.</td>
+        </tr>
+        <tr>
+          <td class="tag">top<br />right<br />bottom<br />left</td>
+          <td>Sets the element's offset relative to the chosen side from either its normal position or its containing
+            block, depending on <strong>position</strong>.</td>
+        </tr>
+        <tr>
+          <td class="tag">display</td>
+          <td>An important property that can have complicated effects depending on the options selected. See MDN Web
+            Docs page, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">here</a>. Basic keywords are
+            covered in the <a href="#display-keywords">Keywords</a> section below.</td>
+        </tr>
+        <tr>
+          <td class="tag">float</td>
+          <td>Places an element on the left or right side of the page, allowing text and inline elements to wrap around
+            it.</td>
+        </tr>
+        <tr>
+          <td class="tag">clear</td>
+          <td>Sets the wrapping behavior of an element relative to neighboring floating elements.</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Keywords</h2>
+    <h3>General</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Full Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tag">visibility: <span>visible</span>;</td>
+          <td>The element is made visible.</td>
+        </tr>
+        <tr>
+          <td class="tag">visibility: <span>hidden</span>;</td>
+          <td>The element is made invisible, but is allowed to affect layout as normal.</td>
+        </tr>
+        <tr>
+          <td class="tag">visibility: <span>collapse</span>;</td>
+          <td>The element is made invisible, but is allowed to affect layout as normal <em>unless</em> it is a table
+            element or collapsed flex item or ruby annotation.</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Box Model</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Full Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tag">margin: <span class="auto">auto</span>;</td>
+          <td>Allows the browser the freedom to select a suitable margin to use.</td>
+        </tr>
+        <tr>
+          <td class="tag">overflow: <span>visible</span>;</td>
+          <td>Content is not clipped and will be rendered outside the padding box.</td>
+        </tr>
+        <tr>
+          <td class="tag">overflow: <span>hidden</span>;</td>
+          <td>Content is clipped where necessary to fit inside the padding box, without automated scrolling.</td>
+        </tr>
+        <tr>
+          <td class="tag">overflow: <span>clip</span>;</td>
+          <td>Content is clipped where necessary to fit inside the padding box, disallowing any scrolling.</td>
+        </tr>
+        <tr>
+          <td class="tag">overflow: <span>scroll</span>;</td>
+          <td>Content is clipped where necessary to fit inside the padding box, while providing an option to scroll. The
+            scrollbar is always visible.</td>
+        </tr>
+        <tr>
+          <td class="tag">overflow: <span class="auto">auto</span>;</td>
+          <td>Content is clipped where necessary to fit inside the padding box, while (for most browsers) providing an
+            option to scroll if needed. The scrollbar displaces content.</td>
+        </tr>
+        <tr>
+          <td class="tag">overflow: <span>overlay</span>;</td>
+          <td>Content is clipped where necessary to fit inside the padding box, while (for most browsers) providing an
+            option to scroll if needed. The scrollbar covers up content.</td>
+        </tr>
+        <tr>
+          <td class="tag">width: <span class="auto">auto</span>;<br />height: <span class="auto">auto</span>;</td>
+          <td>The browser is allowed to calculate and select the value for the element. Also works with min- and
+            max-width and height properties.</td>
+        </tr>
+        <tr>
+          <td class="tag">width: <span>min-content</span>;<br />height: <span>min-content</span>;</td>
+          <td>The intrinsic minimum width. Also works with min- and max-width and height properties.</td>
+        </tr>
+        <tr>
+          <td class="tag">width: <span>max-content</span>;<br />height: <span>max-content</span>;</td>
+          <td>The intrinsic preferred width. Also works with min- and max-width and height properties.</td>
+        </tr>
+        <tr>
+          <td class="tag">width: <span>fit-content</span>(...);<br />height: <span>fit-content</span>(...);</td>
+          <td>Sets width to fit the value given, unless it exceeds the max-content value in which case it is set to the
+            max-content value. Also works with min- and max-width and height properties.</td>
+        </tr>
+        <tr>
+          <td class="tag">box-sizing: <span>content-box</span>;</td>
+          <td>The final width and height of the element is the sum of the set width and height and the thickness of
+            borders and padding.</td>
+        </tr>
+        <tr>
+          <td class="tag">box-sizing: <span>border-box</span>;</td>
+          <td>The final width and height of the element is the set width and height. The content box shrinks to show
+            borders and padding.</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 id="display-keywords">Display and Positioning</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Full Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tag">z-index: <span class="auto">auto</span>;</td>
+          <td>Default value. Sets the z-index of this element to 0 without establishing a stacking context for
+            descendants.</td>
+        </tr>
+        <tr>
+          <td class="tag">position: <span>static</span>;</td>
+          <td>Default value. The element is positioned normally and the top, right, bottom, left and z-index properties
+            <em>are ignored</em>.
+          </td>
+        </tr>
+        <tr>
+          <td class="tag">position: <span>relative</span>;</td>
+          <td>The element is positioned normally, then offset relative to itself based on the top, right, bottom, left
+            and z-index properties.</td>
+        </tr>
+        <tr>
+          <td class="tag">position: <span>absolute</span>;</td>
+          <td>The element is removed from normal document flow and offset relative to its closest positioned ancestor
+            based on the top, right, bottom, left and z-index properties.</td>
+        </tr>
+        <tr>
+          <td class="tag">position: <span>fixed</span>;</td>
+          <td>The element is removed from normal document flow and offset relative to the initial containing block of
+            the viewport, with exceptions if an ancestor has a transform, perspective or filter property set. In printed
+            documents, the element is placed in the same position on every page.</td>
+        </tr>
+        <tr>
+          <td class="tag">position: <span>sticky</span>;</td>
+          <td>The element is positioned normally, then offset relative to its nearest ancestor with a scrolling
+            mechanism (created by <strong>overflow</strong>) based on the top, right, bottom, left and z-index
+            properties.</td>
+        </tr>
+        <tr>
+          <td class="tag">top: <span class="auto">auto</span>;<br />right: <span class="auto">auto</span>;<br />bottom:
+            <span class="auto">auto</span>;<br />left: <span class="auto">auto</span>;
+          </td>
+          <td>Specifies that the position of the element is based on the value of the opposite side's property (e.g.
+            bottom is used if top is set to auto). If both sides are set to auto, then the element is not moved.</td>
+        </tr>
+        <tr>
+          <td class="tag">top: <span>inherit</span>;<br />right: <span>inherit</span>;<br />bottom:
+            <span>inherit</span>;<br />left: <span>inherit</span>;
+          </td>
+          <td>Specifies that the value is the same as the computed value from the parent element.</td>
+        </tr>
+        <tr>
+          <td class="tag">display: <span>block</span>;</td>
+          <td>Block-level elements take up the full width of their container, and can have their width and height
+            adjusted.</td>
+        </tr>
+        <tr>
+          <td class="tag">display: <span>inline</span>;</td>
+          <td>Inline elements take up as little space as possible, flow horizontally, and cannot have their width or
+            height adjusted.</td>
+        </tr>
+        <tr>
+          <td class="tag">display: <span>inline-block</span>;</td>
+          <td>Inline-block elements can appear next to each other, and can have their width and height adjusted.</td>
+        </tr>
+        <tr>
+          <td class="tag">float: <span>none</span>;</td>
+          <td>Sets the element to not float. Text and other inline elements will not flow around this element.</td>
+        </tr>
+        <tr>
+          <td class="tag">float: <span>left</span>;</td>
+          <td>Sets the element to float on the left side. Text and other inline elements will flow around this element.
+          </td>
+        </tr>
+        <tr>
+          <td class="tag">float: <span>right</span>;</td>
+          <td>Sets the element to float on the right side. Text and other inline elements will flow around this element.
+          </td>
+        </tr>
+        <tr>
+          <td class="tag">float: <span>inline-start</span>;</td>
+          <td>Sets the element to float on the <em>start side</em>, meaning the left side for left-to-right scripts.
+            Text and other inline elements will flow around this element.</td>
+        </tr>
+        <tr>
+          <td class="tag">float: <span>inline-end</span>;</td>
+          <td>Sets the element to float on the <em>end side</em>, meaning the right side for left-to-right scripts. Text
+            and other inline elements will flow around this element.</td>
+        </tr>
+        <tr>
+          <td class="tag">clear: <span>none</span>;</td>
+          <td>Default value. The element will not be moved down to clear past floating elements.</td>
+        </tr>
+        <tr>
+          <td class="tag">clear: <span>left</span>;</td>
+          <td>The element will be moved down to clear past left-floating elements.</td>
+        </tr>
+        <tr>
+          <td class="tag">clear: <span>right</span>;</td>
+          <td>The element will be moved down to clear past right-floating elements.</td>
+        </tr>
+        <tr>
+          <td class="tag">clear: <span>both</span>;</td>
+          <td>The element will be moved down to clear past floating elements on both sides.</td>
+        </tr>
+        <tr>
+          <td class="tag">clear: <span>inline-start</span>;</td>
+          <td>The element will be moved down to clear past floating elements on the <em>start side</em>, meaning the
+            left side for left-to-right scripts.</td>
+        </tr>
+        <tr>
+          <td class="tag">clear: <span>inline-end</span>;</td>
+          <td>The element will be moved down to clear past floating elements on the <em>end side</em>, meaning the right
+            side for left-to-right scripts.</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Helpful Links</h2>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs CSS Reference</a></li>
+      <li><a
+          href="https://www.codecademy.com/learn/paths/front-end-engineer-career-path/tracks/fecp-22-fundamentals-of-css/modules/wdcp-22-learn-css-the-box-model/cheatsheet">Codecademy
+          - Fundamentals of CSS - Learn CSS Cheatsheets</a></li>
+      <li><a href="https://www.w3schools.com/CSSref/css_units.asp">CSS units reference (px, em, percentages)</a></li>
+    </ul>
+    <!-- End project content -->
+
+  </body>
+
+</html>
